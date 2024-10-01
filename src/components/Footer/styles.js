@@ -100,21 +100,25 @@ export const FooterStyled = styled.div`
         }
 
         .card {
+        height: 50%
           width: 100%;
           border: 1px solid #e7e5f2;
           &-body {
             .form-control {
              font-family:EnnVisions;
               width: 90%;
-              margin: 10px auto;
-              padding-top: 10px;
-              padding-bottom: 10px;
+              margin: 4px auto;
+              // padding-top: 10px;
+              // padding-bottom: 5px;
+                border-bottom: 1px solid black;
+              
             }
             button {
+            margin-top: 3px;
               background: #c8d7dd;
               border: 1px solid #c8d7dd;
               color: #282f40;
-              font-weight: bold;
+              // font-weight: bold;
             }
           }
         }

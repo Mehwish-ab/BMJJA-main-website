@@ -6,7 +6,8 @@ import footerBg from "../../assets/images/footer-bg.png";
 import fbIcon from "../../assets/icons/ic_fb.png";
 import instaIcon from "../../assets/icons/ic_insta.png";
 import twitterIcon from "../../assets/icons/ic_twitter.png";
-import ContactForm from "./ContactForm";
+import ContactUs from "./ContactUs";
+// import ContactForm from "./ContactForm";
 const Footer = () => {
   return (
     <FooterStyled className="mt-5 mb-3" id="contactUsSection">
@@ -35,7 +36,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="contact-form-section">
-              <ContactForm />
+              <ContactUs />
+              {/* <ContactForm /> */}
             </div>
           </div>
           <div className="address d-lg-block d-none position-absolute address-at-bottom">
@@ -44,18 +46,18 @@ const Footer = () => {
               Brighton BN2 5WA
             </p>
           </div>
-
-          <div className="social-media-row d-flex align-items-center justify-content-center gap-5 mt-5 flex-wrap">
-            <div className="rights-reserved">
-              <p>
-                ©2024 Brighton Marina Jiu Jitsu Academy. All rights reserved.{" "}
-              </p>
-            </div>
-            <div className="social-media-icons d-flex gap-3">
-              <img src={fbIcon} alt="" />
-              <img src={instaIcon} alt="" />
-              <img src={twitterIcon} alt="" />
-            </div>
+        </div>
+        {/* <div style={{ paddingTop: "100px" }}></div> */}
+        <div className="social-media-row d-flex align-items-center justify-content-center gap-5 mt-5 flex-wrap">
+          <div className="rights-reserved">
+            <p>
+              ©2024 Brighton Marina Jiu Jitsu Academy. All rights reserved.{" "}
+            </p>
+          </div>
+          <div className="social-media-icons d-flex gap-3">
+            <img src={fbIcon} alt="" />
+            <img src={instaIcon} alt="" />
+            <img src={twitterIcon} alt="" />
           </div>
         </div>
       </Container>
