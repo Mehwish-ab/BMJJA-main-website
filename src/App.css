@@ -1,4 +1,4 @@
- *,
+*,
 *::after,
 *::before {
   margin: 0;
@@ -7,9 +7,9 @@
   outline: none;
   border: none;
 }
-.home_page {
-  /* padding-top: 7.5rem; */
-}
+/* .home_page {
+  padding-top: 7.5rem;
+} */
 
 .home_page .signature-section {
   background: hsl(205, 20%, 17%);
@@ -38,10 +38,9 @@
   }
 }
 
-
-element.style {
-  /* padding-top: 7.5rem; */
-}
+/* element.style {
+  padding-top: 7.5rem;
+} */
 body {
   background-color: #fff;
 }
@@ -55,7 +54,7 @@ h5,
 h6 {
   /* margin-top: 3px;
   margin-bottom: 0px; */
- margin: 0;
+  margin: 0;
   font-family: "EnnVisions";
 }
 

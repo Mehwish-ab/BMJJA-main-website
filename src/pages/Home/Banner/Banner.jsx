@@ -91,12 +91,7 @@ const Banner = () => {
         </Container>
       </BannerContainer>
       <div>
-        {/* <iframe
-          src="https://bmjja.kicksite.net/bizbuilders/lead_capture_forms/eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoibGNmXzEwMjAxIn0.YxHDhjP1ZxPGM1jYlMlMZs-8JjSc4vofLoBD1aP1I04"
-          width="400"
-          height="600"
-          loading="lazy"
-        ></iframe> */}
+      
       </div>
     </>
   );

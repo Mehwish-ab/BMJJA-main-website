@@ -1,6 +1,7 @@
 import React from "react";
 import ContactModal from "./ContactModal";
-import contactimage from "../../assets/images/contactimage.png";
+import contactimage from "../../assets/images/contactimage.jpeg";
+import "./ContactUs.css";
 
 function ContactUs() {
   return (
