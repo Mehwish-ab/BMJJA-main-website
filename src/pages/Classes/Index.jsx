@@ -15,6 +15,7 @@ import video11Img from "../../assets/images/video11.df92b47435e1eee4eeb3.png";
 import video12Img from "../../assets/images/video12.271e3623749f3140591e.png";
 // import Footer from "../../components/Footer/Footer";
 import "./styles.css";
+import CategoryBar from "./CategoryBar/CategoryBar";
 const Index = () => {
   const videoDetail = [
     {
@@ -105,7 +106,8 @@ const Index = () => {
 
 
   return (
-    <div className="classes-page">
+    <div style={{marginTop: "7.3rem"}} className="classes-page">
+      <CategoryBar />
       <Container>
 
         <div className="video-card-row mt-4 d-grid gap-3">

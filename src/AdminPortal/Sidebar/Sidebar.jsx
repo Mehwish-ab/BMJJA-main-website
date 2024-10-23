@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import styles from "./Sidebar.module.css"; // Import CSS module
+import styles from "./Sidebar.module.css"; 
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
-  const handleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
+  // const handleCollapse = () => {
+  //   setIsCollapsed(!isCollapsed);
+  // };
 
   return (
     <>
@@ -18,43 +19,48 @@ const Sidebar = () => {
       </div> */}
         <ul className={styles.navLinks}>
           <li>
-            <a href="#dashboard">
+          <Link to="/admin" > <i className="fas fa-tachometer-alt"></i> {!isCollapsed && "Dashboard"}</Link>
+            {/* <a href="/admin">
               <i className="fas fa-tachometer-alt"></i>{" "}
               {!isCollapsed && "Dashboard"}
-            </a>
+            </a> */}
           </li>
           <li>
-            <a href="#users">
+            {/* <a href="/createvideo">
               <i className="fas fa-users"></i> {!isCollapsed && "Create Video"}
-            </a>
+            </a> */}
+            <Link to="/uploadvideo" > <i className="fas fa-users" ></i> {!isCollapsed && "Upload Video"}</Link>
+
           </li>
           <li>
-            <a href="#users">
+          <Link to="/videolist" > <i className="fas fa-users" color="grey"></i> {!isCollapsed && "Video List"}</Link>
+
+           
+          </li>
+          <li>
+            {/* <a href="/addcategory">
               <i className="fas fa-users"></i> {!isCollapsed && "Edit Video"}
-            </a>
+            </a> */}
+             <Link to="/addcategory" > <i className="fas fa-users" color="grey"></i> {!isCollapsed && "Add Category"}</Link>
           </li>
-          <li>
-            <a href="#users">
-              <i className="fas fa-users"></i> {!isCollapsed && "Video List"}
-            </a>
-          </li>
-          <li>
+         
+          {/* <li>
             <a href="#users">
               <i className="fas fa-users"></i> {!isCollapsed && "Users"}
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#settings">
               <i className="fas fa-cog"></i> {!isCollapsed && "Settings"}
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#reports">
               <i className="fas fa-chart-line"></i> {!isCollapsed && "Reports"}
             </a>
-          </li>
+          </li> */}
           <div className={styles.logout}>
-            <a href="#logout">
+            <a href="/">
               <i className="fas fa-sign-out-alt"></i> {!isCollapsed && "Logout"}
             </a>
           </div>

@@ -22,7 +22,7 @@ const Banner = () => {
   return (
     <>
       <BannerContainer>
-        <Container className="home_page_wrapper" id="homepage">
+        <Container className="home_page_wrapper" id="homepage" style={{marginTop: "7.3rem"}}>
           <Row>
             <Col lg={{ span: 16 }} span={24} className="px-0">
               <img src={bannerImg} alt="banner" className="bannerImg" />
